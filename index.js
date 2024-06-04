@@ -7,7 +7,7 @@ const adminRouter = require("./routes/admin");
 const productRouter = require("./routes/product");
 const userRouter = require("./routes/user");
 // INIT
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 const app = express();
 const DB = "mongodb+srv://asmaa:asmaa12345@cluster0.gtievxr.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 // MIDDLEWARE
